@@ -1,0 +1,311 @@
+/* Simple styles for the UNESWA FM student website */
+
+body {
+  background-color: #fff8df;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+a {
+  color: #222222;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.top {
+  background-color: #222222;
+  color: white;
+  padding: 8px 0;
+  font-size: 13px;
+}
+
+.top .wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top a,
+footer a {
+  color: #ffd34e;
+}
+
+header {
+  background-color: #fff8df;
+  border-bottom: 2px solid #222222;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px 0;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo small {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 6px 9px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+  background-color: #ffd34e;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff806e;
+  border: 2px solid #222222;
+  padding: 8px 13px;
+  color: #222222;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero,
+.page-hero {
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+
+.hero-grid,
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.05;
+}
+
+h2 {
+  line-height: 1.2;
+}
+
+.page-title {
+  font-size: 44px;
+}
+
+.eyebrow,
+.sticker {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.onair,
+.card,
+.row,
+.story {
+  border: 2px solid #222222;
+  padding: 18px;
+  margin-bottom: 16px;
+  background-color: #fffdf4;
+}
+
+.onair,
+.yellow {
+  background-color: #ffd34e;
+}
+
+.blue {
+  background-color: #c2eee6;
+}
+
+.pink {
+  background-color: #ffd1c9;
+}
+
+.green {
+  background-color: #d7edb8;
+}
+
+.onair strong {
+  display: block;
+  font-size: 52px;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.card h3 {
+  margin-bottom: 5px;
+}
+
+.band {
+  background-color: #222222;
+  color: white;
+  padding: 25px 0;
+}
+
+.band .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.band h2 {
+  margin: 5px 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 15px;
+  align-items: center;
+}
+
+.row h3,
+.row p {
+  margin: 0;
+}
+
+.row time {
+  font-weight: bold;
+}
+
+.day {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.story {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 15px;
+  background-color: #ffd34e;
+}
+
+.form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form input,
+.form select,
+.form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #222222;
+  font: inherit;
+}
+
+.form textarea {
+  height: 120px;
+}
+
+.hours {
+  padding: 0;
+  list-style: none;
+}
+
+.hours li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #777777;
+  padding: 7px 0;
+}
+
+.faq details {
+  padding: 12px 0;
+  border-bottom: 1px solid #222222;
+}
+
+footer {
+  background-color: #222222;
+  color: white;
+  margin-top: 40px;
+  padding: 30px 0 15px;
+}
+
+footer .foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer small {
+  display: block;
+  border-top: 1px solid #777777;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .hero-grid,
+  .columns,
+  .story {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .nav {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1,
+  .page-title {
+    font-size: 36px;
+  }
+
+  .band .wrap,
+  .section-head {
+    display: block;
+  }
+}
